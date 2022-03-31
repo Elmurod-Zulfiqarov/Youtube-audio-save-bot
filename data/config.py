@@ -9,12 +9,18 @@
 # ADMINS = env.list("ADMINS")  # adminlar ro'yxati
 # IP = env.str("ip")  # Xosting ip manzili
 
-CHANNELS = ["-1001664822092"]
+# CHANNELS = ["-1001664822092"]
 
 import os
 
 # .env fayl ichidan quyidagilarni o'qiymiz
-BOT_TOKEN = str(os.environ.get("BOT_TOKEN"))  # Bot token
-ADMINS = list(os.environ.get("ADMINS"))  # adminlar ro'yxati
+# BOT_TOKEN = str(os.environ.get("BOT_TOKEN"))  # Bot token
+# ADMINS = list(os.environ.get("ADMINS"))  # adminlar ro'yxati
 # CHANNELS = list(os.environ.get("CHANNELS"))
-IP = str(os.environ.get("ip"))  # Xosting ip manzili
+# IP = str(os.environ.get("ip"))  # Xosting ip manzili
+
+#test
+BOT_TOKEN = '5117956060:AAE5Oz85J98a80JZJbjUCGKnJkQyIYlfsNI'
+ADMINS = [846140804]
+CHANNELS = ["-1001664822092"]
+
