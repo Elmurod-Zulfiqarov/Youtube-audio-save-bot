@@ -2,7 +2,7 @@ from aiogram import types
 from loader import dp, bot
 from aiogram.dispatcher.filters import Text
 from pytube import YouTube
-from data.config import ADMINS, CHANNELS
+from data.config import CHANNELS
 
 
 @dp.message_handler(Text(startswith='http'))
