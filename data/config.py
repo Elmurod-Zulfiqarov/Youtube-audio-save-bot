@@ -9,6 +9,6 @@
 # ADMINS = env.list("ADMINS")  # adminlar ro'yxati
 # IP = env.str("ip")  # Xosting ip manzili
 
-ADMINS=[846140804]
-BOT_TOKEN='5117956060:AAG1YbbkqK8vcoX9aBeX0_vViKmK98VtAc0'
-CHANNELS = ["-1001664822092"]
+ADMINS=[] #admin_id integer
+BOT_TOKEN='token_id'
+CHANNELS = ["channel_id"]
