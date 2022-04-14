@@ -20,7 +20,7 @@ import os
 # IP = str(os.environ.get("ip"))  # Xosting ip manzili
 
 #test
-BOT_TOKEN = '5117956060:AAE5Oz85J98a80JZJbjUCGKnJkQyIYlfsNI'
-ADMINS = [846140804]
-CHANNELS = ["-1001664822092"]
+BOT_TOKEN = 'bot token_id'
+ADMINS = [934204023] # admin_id
+CHANNELS = ["channel_id"] 
 
