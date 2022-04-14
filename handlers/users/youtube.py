@@ -15,9 +15,9 @@ async def youtubeVideoConverterAudio(message: types.Message):
         audio = url.streams.get_audio_only()
         audio.stream_to_buffer(buffer=buffer)
         buffer.seek(0)
-        video_title = url.title
+        video_title = url.title + str("\n\n🎸🎵🎧🎯\n @your_music_youtube")
         audio_file = await message.answer_audio(audio=buffer, caption=video_title)
         target_channel = CHANNELS[0]
         await audio_file.send_copy(chat_id=target_channel)
     else:
-        await message.answer("Linkni qaytadan tekshirib ko'ring!")
+        await message.answer("🇺🇿 - Linkni qaytadan tekshirib ko'ring!\n🇬🇧 - Check the link again!\n🇷🇺 - Проверьте ссылку еще раз!")

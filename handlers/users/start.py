@@ -17,15 +17,14 @@ async def bot_start(message: types.Message):
     except sqlite3.IntegrityError as err:
         await bot.send_message(chat_id=ADMINS[0], text=err)
 
-    await message.answer(f"<b> Salom👋👋👋, {message.from_user.full_name}!</b>\n"
-                        f" <i>✅Men youtube videolarini audioga o'tkazib beruvchi 🤖Bot</i>\n"
-                        f" <i>❗️Menga youtube video linkini yuboring!</i>")
+    await message.answer(f"<b> Hello👋, {message.from_user.full_name}!</b>\n"
+                        f" <i>🤖 Send me a youtube video link!</i>")
     # Adminga xabar beramiz
     count = db.count_users()[0]
     if message.from_user.username:
         user_n = message.from_user.username
     else:
-        user_n = 'username mavjudmas'
-    msg = f"{message.from_user.full_name} va {user_n} bazaga qo'shildi.\nBazada {count} ta foydalanuvchi bor."
+        user_n = "username-not available"
+    msg = f"{message.from_user.full_name} and {user_n} added to the database.\nThere are {count} users in the database."
     await bot.send_message(chat_id=ADMINS[0], text=msg)
     
