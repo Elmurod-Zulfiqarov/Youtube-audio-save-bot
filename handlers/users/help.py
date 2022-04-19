@@ -18,7 +18,7 @@ async def bot_help(message: types.Message):
 
 @dp.message_handler(text="/about")
 async def about_audio_bot(message: types.Message):
-	await message.answer("👋 Welcome to YouTube Audio Save Bot🤖\n\n"
+	await message.answer("👋 Welcome to YouTube Music Save Bot🤖\n\n"
                 "✅ Bot - YouTube videolarini audio shakliga aylantirib beradi\n"
                 "🇺🇿YouTube 🎞video 🔗linkini botga yuboring - bot sizga 🎵audio formatini qaytarib yuboradi\n\n"
                 "✅ Bot - Converts YouTube videos to audio format\n"
@@ -32,7 +32,8 @@ async def about_audio_bot(message: types.Message):
 async def video_bot(message: types.Message):
 	text = "<b>❗️ Subscribe to @your_music_youtube channel</b>\n"
 	text += f"<u>✅ All the music you are looking for is here! 🙂🙃😉</u>\n"
-	text += f"<b>Use the <a href='https://t.me/video_to_audio_converterbot'>YouTube Audio Save Bot</a> @video_to_audio_converterbot</b>\n"
-	text += f"<b>Use the <a href='https://t.me/Youtube_video_savebot'>YouTube Video Save Bot</a> @Youtube_video_savebot</b>\n"
+	text += f"<b>Use the <a href='https://t.me/video_to_audio_converterbot'>YouTube Audio Save Bot</a>🎵 @video_to_audio_converterbot</b>\n"
+	text += f"<b>✅ Use the <a href='https://t.me/Youtube_music_savebot'>YouTube Music Save Bot!</a>🎵 @Youtube_video_savebot</b>\n"
+	text += f"<b>Use the <a href='https://t.me/Youtube_video_savebot'>YouTube Video Save Bot</a>📹 @Youtube_video_savebot</b>\n"
 
 	await message.answer(text)	
