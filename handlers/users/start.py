@@ -18,7 +18,9 @@ async def bot_start(message: types.Message):
         await bot.send_message(chat_id=ADMINS[0], text=err)
 
     await message.answer(f"<b> Hello👋, {message.from_user.full_name}!</b>\n"
-                        f" <i>🤖 Send me a youtube video link!</i>")
+                        f" <i>🤖 Send me a youtube video link!</i>\n"
+                        f" <u>❗️🔴 max audio volume = 50mb ‼️</u>")
+
     # Adminga xabar beramiz
     count = db.count_users()[0]
     if message.from_user.username:
